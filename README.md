@@ -1,7 +1,3 @@
-# New Project
-
-> ✨ Bootstrapped with Create Snowpack App (CSA).
-
 ## Available Scripts
 
 ### npm start

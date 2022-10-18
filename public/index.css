@@ -1,0 +1,50 @@
+/* Begin boilerplate template code */
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: monospace, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.App h1 {
+	font-size: 3rem;
+	margin-top: 10rem;
+}
+
+.App-logo {
+	margin-top: 10rem;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 10px solid #61dafb;
+
+	animation-name: bounce;
+	animation-duration: 8s;
+	animation-direction: default;
+	animation-timing-function: cubic-bezier(0.05, 0.05, 1, 0.5);
+	animation-iteration-count: infinite;
+	background-color: #111212;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translate3d(0, 25rem, 0) rotate(0deg) scale(0.1);
+	}
+	40% {
+		transform: translate3d(0, -10rem, 0) rotate(360deg) scale(0.8);
+	}
+	45% {
+		transform: translate3d(0, -10rem, 0) rotate(360deg) scale(0.8);
+	}
+	100% {
+		transform: translate3d(0, 30rem, 0) rotate(360deg) scale(0.8);
+	}
+}
+/* End boilerplate template code */
