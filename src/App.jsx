@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { changeTitle } from './helpers';
-import logo from './logo.svg';
+import Game from './Game';
 
 function App() {
 	// Create the count state.
@@ -14,14 +14,7 @@ function App() {
 
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<h1>Thank you for using the PxPerfect Snowpack React template</h1>
-				<img
-					src={logo}
-					className='App-logo'
-					alt='logo'
-				/>
-			</header>
+			<Game />
 		</div>
 	);
 }

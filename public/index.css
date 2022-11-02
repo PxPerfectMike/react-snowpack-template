@@ -1,50 +1,36 @@
-/* Begin boilerplate template code */
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 0.4rem;
 
-* {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	width: 30vw;
+	height: 30vw;
+	outline: 2px solid white;
+	outline-offset: 10px;
+	border-radius: var(--game-border-radius);
+	box-shadow: inset 0 0 100px 5px #f0f1f1;
+	background-color: #070606;
 }
 
-body {
-	font-family: monospace, Helvetica, sans-serif;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	overflow: hidden;
+.game-item {
+	justify-self: center;
+	align-self: center;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 3rem;
+	resize: both;
 }
 
-.App h1 {
-	font-size: 3rem;
-	margin-top: 10rem;
+.game-item0 {
+	background-color: #00a4ff;
 }
-
-.App-logo {
-	margin-top: 10rem;
-	width: 500px;
-	height: 500px;
-	border-radius: 50%;
-	border: 10px solid #61dafb;
-
-	animation-name: bounce;
-	animation-duration: 8s;
-	animation-direction: default;
-	animation-timing-function: cubic-bezier(0.05, 0.05, 1, 0.5);
-	animation-iteration-count: infinite;
-	background-color: #111212;
+.game-item1 {
+	background-color: #00ff5b;
 }
-
-@keyframes bounce {
-	0% {
-		transform: translate3d(0, 25rem, 0) rotate(0deg) scale(0.1);
-	}
-	40% {
-		transform: translate3d(0, -10rem, 0) rotate(360deg) scale(0.8);
-	}
-	45% {
-		transform: translate3d(0, -10rem, 0) rotate(360deg) scale(0.8);
-	}
-	100% {
-		transform: translate3d(0, 30rem, 0) rotate(360deg) scale(0.8);
-	}
+.game-item2 {
+	background-color: #5b00ff;
 }
-/* End boilerplate template code */
+.game-item3 {
+	background-color: #ff5b00;
+}
